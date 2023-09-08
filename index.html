@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="figuras">
+        <button id="borrador"> <img src="img/borrador.png" alt=""> </button>
+        <button id="lapiz"><img src="img/lapiz.png" alt=""></button>
+        <button id="linea"> <img src="img/linea.png" alt=""> </button>
+        <button id="cuadrado"> <img src="img/cuadrado.png" alt=""> </button>
+        <button id="triangulo"> <img src="img/triangulo.png" alt="" > </button>
+        <button id="circulo"> <img src="img/circulo.png" alt=""> </button>
+        <button id="pentagono"> <img src="img/pentago.png" alt=""> </button>
+        <button id="hexagono"> <img src="img/hexagono.png" alt=""> </button>
+        <button id="heptagono"> <img src="img/heptagono.png" alt=""> </button>
+        <button id="octagono"> <img src="img/octagono.png" alt=""> </button>
+        <button id="decagono"> <img src="img/decagono.png" alt=""> </button>
+        <button id="rectangulo"> <img src="img/rectangular.png" alt=""></button>
+        <button id="ellipse"><img src="img/ellipse.png" alt=""></button>
+
+    </div>  
+    <div class="cabezera">
+        <button id="rojo" style="background-color: red;"> </button>
+        <button id="azul" style="background-color: blue;"></button>
+        <button id="verde" style="background-color: green;"> </button>
+        <button id="amarillo" style="background-color: yellow;">  </button>
+        <button id="naranja" style="background-color: orange;"></button>
+        <button id="morado" style="background-color: purple"> </button>
+        <button id="negro" style="background-color: black;"></button>
+        
+    </div>
+    <canvas id="canvas" height="700px" width="1450px" style="border: 1px solid; background-color: white;"></canvas>
+    <div class="opciones"> 
+        <button id="seleccione"> <img  src="img/mover-el-boton.png" alt=""> </button>
+        <button id="rotar"> <img src="img/rotar.png" alt=""></button>
+        <button id="expandir"> <img src="img/expandir-flechas.png" alt=""></button>
+        <button id="guardar"><img src="img/disquete.png" alt="" ></button>
+        <button id="cargar_archivo"> <img src="img/abrir-esquema-de-carpeta.png" alt=""></button>
+        <input type="file" style="display: none;" value="" id="archivo" onchange="loadFile(this.files[0])">
+        <button id="png"><img src="img/png.png" alt=""></button>
+        <button id="frente">Al frente</button>
+        <button id="fondo">Al fondo</button>
+        <button id="atras">Atras </button>
+        <button id="adelante">Adelan te</button>
+        <button style="font-size: 30px; " id="menor"> - </button>
+        <h2 id="numeroGrosor" style="text-align: center;"></h2>
+        <button style="font-size: 30px; " id="mayor"> + </button>
+        <button id="textura"> <img src="img/textura.png" alt=""></button>
+        <button id="deshacer"> <img src="img/deshacer.png" alt=""></button>
+        <button id="rehacer"><img src="img/rehacer.png" alt=""></button>
+
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/lineas.js"></script>
+    <script src="js/imprimir.js"></script>  
+    <script src="js/cuadrado.js"></script>
+    <script src="js/seleccionar.js"></script>
+    <script src="js/circulo.js"></script>
+    <script src="js/poligono.js"></script>
+    <script src="js/almacenar.js"></script>
+    <script src="js/mover.js"></script>
+    <script src="js/FigurasPreview.js"></script>
+    <script src="js/rotar.js"></script>
+    <script src="js/expandir.js"></script>
+    <script src="js/rectangulo.js"></script>
+    <script src="js/desplazarVector.js"></script>
+    <script src="js/lapiz.js"></script>
+    <script src="js/borrar.js"></script>
+    <script src="js/activar.js"></script>
+    <script src="js/textura.js"></script>
+    <script src="js/temporal.js"></script>
+    <script src="js/ellipse.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.figuras {
+    height: 100%;
+    border: 1px solid;
+    width: 40px;
+    float: left;
+} 
+.cabezera {
+    height: 40px;
+    border: 1px solid;
+}
+.figuras button {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid ;
+}
+.opciones {
+    height: 100%;
+    border: 1px solid;
+    width: 40px;
+    float: left;
+}
+.cabezera button, .cabezera h2 {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid;
+}
+
+.opciones button, .opciones input {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid;
+}
+.figuras button img, .cabezera button img, .opciones button img {
+    width: 30px;
+    height: 30px;
+}
+canvas {
+    float : left;
+    background: white;
+}
+
